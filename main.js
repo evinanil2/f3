@@ -1,13 +1,8 @@
 img = "";
 noseX = 0;
 noseY = 0;
-marioX = 325;
-marioY = 325;
 
-function preload()
-{
-  img = loadImage("mario05.png");
-}
+
 
 function startGame() {
   createCanvas(650, 400);
@@ -32,17 +27,6 @@ function gotPoses(results)
 
 function draw() {
   background("#D3D3D3");
-  if(noseX < 300){
-    marioX = marioX - 1;
-  }
-  if(noseX > 300){
-    marioX = marioX + 1;
-  }
-  if(noseY < 150){
-    marioY = marioY - 1;
-  }
-  if(noseY > 150){
-    marioY = marioY + 1;
-  }
-  image(img,marioX, marioY, 40,70);
+  
+  image(img, 40,70);
 }
